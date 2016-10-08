@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>her Village</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="bower_components/materialize/dist/css/materialize.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!--<script src="assets/javascript/typed.min.js"></script>-->
+    <script src="bower_components/materialize/dist/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+
+
+<nav class="teal lighten-3">
+    <div class="nav-wrapper">
+        <div class="container">
+            <a href="#" data-activates="slide-out" class="left button-for-nav"><i class="material-icons">menu</i></a>
+
+            <a href="index.html" class="brand-logo center">
+                herVillage
+            </a>
+        </div>
+</nav>
+
+
+
+<ul id="slide-out" class="side-nav">
+    <li>
+        <div class="userView">
+            <img class="background" src="assets/images/1-fam.jpeg">
+            <a href="#!user"><img class="circle" id="auth-avatar"
+                                  src="https://www.gravatar.com/avatar/205e460b479e2e5b48dsc07710c08d50?d=mm&s=150"></a>
+            <p class="white-text">
+                <!--<span id="auth-name">Jane Developer</span>-->
+                <span id="auth-status">You are signed out.</span>
+            </p>
+        </div>
+    </li>
+
+</ul>
+
+
+<div class="section no-pad-bot flex-center " id="index-banner">
+    <div class="container">
+        <br><br>
+        <h2 class="header center white-text">It takes a village <span class="hero-type">to start a business</span></h2>
+        <div class="row center">
+            <h5 class="header col s12 light white-text">You don't have to go at it alone.</h5>
+        </div>
+        <div class="row center">
+            <!-- Button that handles sign-in/sign-out -->
+            <button class="btn-large waves-effect waves-light red lighten-1 text-upper"
+                    id="quickstart-sign-in">
+                <!--<i class="fa fa-google white-text" aria-hidden="true"></i>-->
+                Sign in with Google
+            </button>
+
+        </div>
+        <br><br>
+
+    </div>
+</div>
+
+
+
+
+
+
+<script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyDLeX0KiK8BI442MYimOO4BjYQSBIR9450",
+        authDomain: "hervillage-ba937.firebaseapp.com",
+        databaseURL: "https://hervillage-ba937.firebaseio.com",
+        storageBucket: "hervillage-ba937.appspot.com",
+        messagingSenderId: "650488090259"
+    };
+    firebase.initializeApp(config);
+</script>
+
+
+
+<script>
+    $(document).ready(function () {
+        $('.parallax').parallax();
+        $(".button-for-nav").sideNav();
+    });
+</script>
+
+<script src="assets/js/typed.js"></script>
+</body>
+</html>

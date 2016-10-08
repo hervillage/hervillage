@@ -1,0 +1,20 @@
+
+#index-banner {
+    background: #000000;
+    background-image:  url("../images/1-village.jpeg");
+    background-image: linear-gradient(rgba(128, 203, 196,0.5), rgba(128, 203, 196,0.7)),url("../images/1-village.jpeg");
+    background-size: cover;
+    padding: 100px 0px;
+    height: 100vh;
+}
+.text-upper {
+    text-transform: uppercase;
+}
+
+.flex-center {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

@@ -1,0 +1,19 @@
+{
+  "name": "hervillage",
+  "version": "1.0.0",
+  "description": "It takes a village to start a business",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hervillage/hervillage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hervillage/hervillage/issues"
+  },
+  "homepage": "https://github.com/hervillage/hervillage#readme"
+}
