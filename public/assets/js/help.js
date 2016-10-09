@@ -62,7 +62,16 @@ $(document).on('click','#now', function () {
 
 });
 $(document).on('click','#user1', function () {
-    var finish = '<button class="btn btn-large card-panel large waves-effect waves-light teal lighten-3 text-upper" id="help"> Need something else? </button>';
+    var finish = '<button class="btn btn-large card-panel large waves-effect waves-light teal lighten-3 text-upper" id="morehelp"> Need something else? </button>';
     $('#helpactions').html(finish);
 });
 
+$(document).on('click','#morehelp', function () {
+
+    console.log('clicked');
+    var wherecard = '<div class="col s12"><div class="card-panel white z-depth-1"> <div class="row valign-wrapper">  <div class="col s4">  <i class="teal-text medium material-icons prefix">account_circle</i> <br><span class="teal-text" id="homeHelp"> @Home? </span> </div> <div class="col s4"> <i class="teal-text medium material-icons prefix">business</i> <br><span class="teal-text" id="workHelp"> @Work? </span> </div> <div class="col s4"> <i class="teal-text medium material-icons prefix">class</i><br> <span class="teal-text" id="schoolHelp"> @School? </span>  </div></div> </div> </div>';
+
+    $('#helpactions').html(wherecard); //newPost moves whole textbox to the bottom, need to create new card to prepend
+
+
+});
