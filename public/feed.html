@@ -21,12 +21,15 @@
 <body>
 <nav class="teal lighten-3">
     <div class="nav-wrapper">
-        <div class="container">
+        <div class="">
             <a href="#" data-activates="slide-out" class="left button-for-nav"><i class="material-icons">menu</i></a>
 
             <a href="index.html" class="brand-logo center">
                 herVillage
             </a>
+            <ul id="nav-right" class="right hide-on-med-and-down">
+
+            </ul>
         </div>
 </nav>
 
@@ -52,24 +55,70 @@
     <div class="row center">
         <br>
         <br>
-        <button class="btn-large waves-effect waves-light teal lighten-3 text-upper"
+        <button class="card-panel large waves-effect waves-light teal lighten-3 text-upper"
                 id="help">
             Need a hand?
         </button>
     </div>
-    <div class="row" id="feed">
+    <div class="row" id="addFeed">
     </div>
     <div class="row">
             <form class="col s12">
                 <div class="row">
                     <div class="input-field col s12">
                         <textarea id="textarea1" class="materialize-textarea"></textarea>
-                        <label for="textarea1">Textarea</label>
+                        <label for="textarea1">New Post</label>
+                    </div>
+                    <div class="card-action">
+                        <a href="#" class="btn waves-effect waves-light teal lighten-3" id="submit">Submit</a>
                     </div>
                 </div>
             </form>
     </div>
+    <div class="row" id="feed">
+        <div class="col s12 m8 offset-m2 l6 offset-l3">
 
+            <div class="card-panel white z-depth-1">
+                <div class="row valign-wrapper">
+                    <div class="col s2">
+                        <img src="assets/images/ana.jpeg" alt="" class="circle responsive-img">
+                    </div>
+                    <div class="col s10">
+                      <span class="black-text">
+                        Working from home tomorrow if you need another hour or so, Adri.
+                      </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-panel white z-depth-1">
+                <div class="row valign-wrapper">
+                    <div class="col s2">
+                        <img src="assets/images/adri.jpeg" alt="" class="circle responsive-img">
+                    </div>
+                    <div class="col s10">
+                      <span class="black-text">
+                        Thanks Jas! Can Joe ride with you? I have to finish this pitch.
+                      </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-panel white z-depth-1">
+                <div class="row valign-wrapper">
+                    <div class="col s2">
+                        <img src="assets/images/jasmine.jpeg" alt="" class="circle responsive-img">
+                    </div>
+                    <div class="col s10">
+                      <span class="black-text">
+                        Available for carpooling tonight! Soccer practice @ 6. Let me know.
+                      </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </div>
 
 
@@ -97,5 +146,6 @@
 </script>
 
 <script src="assets/js/auth.js"></script>
+<script src="assets/js/help.js"></script>
 </body>
 </html>
