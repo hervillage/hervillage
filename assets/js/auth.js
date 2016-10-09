@@ -52,12 +52,52 @@ function toggleSignIn() {
     // document.getElementById('quickstart-sign-in').disabled = true;
     // [END_EXCLUDE]
 }
-// [END buttoncallback]
-/**
- * initApp handles setting up UI event listeners and registering Firebase auth listeners:
- *  - firebase.auth().onAuthStateChanged: This listener is called when the user is signed in or
- *    out, and that is where we update the UI.
- */
+
+
+function navlogin() {
+
+    firebase.auth().onAuthStateChanged(function(user) {
+        if (user) {
+            $('#nav-right').empty();
+            // User is signed in.
+            var displayName = user.displayName;
+            var email = user.email;
+            var emailVerified = user.emailVerified;
+            var photoURL = user.photoURL;
+            var isAnonymous = user.isAnonymous;
+            var uid = user.uid;
+            var providerData = user.providerData;
+
+
+            var li = $('<li>');
+            var chip = $('<div class="chip teal lighten-2">');
+            var profileimg = '<img src="' + photoURL + '" alt="Contact Person">' + displayName + '';
+            var newchip = chip.append(profileimg);
+
+            var newnav = li.append(newchip);
+
+            $('#nav-right').append(newnav);
+
+            var friendsicon = '<a class="waves-effect waves-light " href="friends.html" target="_blank"> <i class="large material-icons">supervisor_account</i> </a>';
+
+            var chaticon = '<a class="waves-effect waves-light " href="friends.html" target="_blank"> <i class="large material-icons">forum</i> </a>';
+
+            var gearicon = '<a class="waves-effect waves-light " href="friends.html" target="_blank"> <i class="large material-icons">settings</i> </a>';
+
+            $('#nav-right').append(friendsicon);
+
+            $('#nav-right').append(chaticon);
+
+            $('#nav-right').append(gearicon);
+        }
+
+    });
+}
+
+function navlogout() {
+    $('#nav-right').empty();
+}
+
 function initApp() {
     // Listening for auth state changes.
     // [START authstatelistener]
@@ -76,12 +116,11 @@ function initApp() {
             document.getElementById('quickstart-sign-in').textContent = 'Sign out';
             // document.getElementById('quickstart-account-details').textContent = JSON.stringify(user, null, '  ');
             // [END_EXCLUDE]
+            navlogin();
         } else {
             // User is signed out.
             document.getElementById('quickstart-sign-in').textContent = 'Sign in with Google';
-            // document.getElementById('quickstart-account-details').textContent = 'null';
-            // document.getElementById('quickstart-oauthtoken').textContent = 'null';
-            // [END_EXCLUDE]
+            navlogout();
         }
         // [START_EXCLUDE]
         // document.getElementById('quickstart-sign-in').disabled = false;
