@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="assets/css/app.css">
     <!-- Compiled and minified JavaScript -->
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <!--<script src="assets/javascript/typed.min.js"></script>-->
+    <script src="assets/js/typed.min.js"></script>
     <script src="bower_components/materialize/dist/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -31,6 +31,27 @@
             <a href="index.html" class="brand-logo center">
                 herVillage
             </a>
+
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <a class="waves-effect waves-light " href="friends.html" target="_blank">
+                        <i class="large material-icons">supervisor_account</i>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a class="waves-effect waves-light " href="msg.html" target="_blank">
+                        <i class="large material-icons">forum</i>
+                    </a>
+                </li>
+                <li>
+                    <a class="waves-effect waves-light " href="setting.html" target="_blank">
+                        <i class="large material-icons">settings</i>
+                    </a>
+                </li>
+
+            </ul>
         </div>
 </nav>
 
@@ -52,30 +73,32 @@
 </ul>
 
 
-<div class="section no-pad-bot flex-center " id="index-banner">
-    <div class="container">
-        <br><br>
-        <h2 class="header center white-text">It takes a village <span class="hero-type">to start a business</span></h2>
-        <div class="row center">
-            <h5 class="header col s12 light white-text">You don't have to go at it alone.</h5>
-        </div>
-        <div class="row center">
-            <!-- Button that handles sign-in/sign-out -->
-            <button class="btn-large waves-effect waves-light red lighten-1 text-upper"
-                    id="quickstart-sign-in">
-                <!--<i class="fa fa-google white-text" aria-hidden="true"></i>-->
-                Sign in with Google
-            </button>
 
+
+
+<div class="section no-pad-bot" id="index-banner">
+    <div class="flex-center">
+
+        <div class="container">
+            <br><br>
+            <h2 class="header center white-text">It takes a village to <span class="hero-type">raise a child</span></h2>
+            <div class="row center">
+                <h5 class="header col s12 light white-text">You don't have to go at it alone.</h5>
+            </div>
+            <div class="row center">
+                <!-- Button that handles sign-in/sign-out -->
+                <button class="btn-large waves-effect waves-light red lighten-1 text-upper"
+                        id="quickstart-sign-in">
+                    <!--<i class="fa fa-google white-text" aria-hidden="true"></i>-->
+                    Sign in with Google
+                </button>
+
+            </div>
+            <br><br>
         </div>
-        <br><br>
 
     </div>
 </div>
-
-
-
-
 
 
 <script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
@@ -101,5 +124,6 @@
 </script>
 
 <script src="assets/js/typed.js"></script>
+<script src="assets/js/auth.js"></script>
 </body>
 </html>
