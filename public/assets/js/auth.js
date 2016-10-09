@@ -127,7 +127,11 @@ function initApp() {
         // [END_EXCLUDE]
     });
     // [END authstatelistener]
-    document.getElementById('quickstart-sign-in').addEventListener('click', toggleSignIn, false);
+
+    $(document).on('click','#quickstart-sign-in', function () {
+        toggleSignIn();
+    });
+
 }
 window.onload = function() {
     initApp();
