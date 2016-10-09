@@ -24,4 +24,34 @@ $(document).on('click','#submit', function () {
 
 });
 
+$(document).on('click','#help', function () {
+
+            console.log('clicked');
+            var wherecard = '<div class="col s12"><div class="card-panel white z-depth-1"> <div class="row valign-wrapper">  <div class="col s4">  <i class="teal-text medium material-icons prefix">account_circle</i> <br><span class="teal-text" id="homeHelp"> @Home? </span> </div> <div class="col s4"> <i class="teal-text medium material-icons prefix">business</i> <br><span class="teal-text" id="workHelp"> @Work? </span> </div> <div class="col s4"> <i class="teal-text medium material-icons prefix">class</i><br> <span class="teal-text" id="schoolHelp"> @School? </span>  </div></div> </div> </div>';
+
+            $('#helpactions').html(wherecard); //newPost moves whole textbox to the bottom, need to create new card to prepend
+
+
+    });
+$(document).on('click','#homeHelp', function () {
+
+    console.log('Needs help at home');
+    var whatcard = '<div class="col s12"><div class="card-panel white z-depth-1"> <div class="row valign-wrapper">  <div class="col s3">  <i class="teal-text medium material-icons prefix">supervisor_account</i> <br><span class="teal-text" id="carpool"> Carpool </span> </div> <div class="col s3"> <i class="teal-text medium material-icons prefix">visibility</i> <br><span class="teal-text" id="childcare"> Childcare </span> </div> <div class="col s3"> <i class="teal-text medium material-icons prefix">thumbs_up_down</i><br> <span class="teal-text" id="advice"> Advice </span>  </div><div class="col s3">  <i class="teal-text medium material-icons prefix">work</i> <br><span class="teal-text" id="service"> Services </span></div> </div> </div>';
+
+    $('#helpactions').html(whatcard); //newPost moves whole textbox to the bottom, need to create new card to prepend
+
+
+});
+
+$(document).on('click','#carpool', function () {
+
+    console.log('Needs carpool');
+    var whencard = '<div class="col s12"><div class="card-panel white z-depth-1"> <div class="row valign-wrapper">  <div class="col s6">  <i class="teal-text medium material-icons prefix">alarm_on</i> <br><span class="teal-text" id="now"> Now </span> </div> <div class="col s6"> <i class="teal-text medium material-icons prefix">today</i> <br><span class="teal-text" id="later"> Later </span> </div> </div> </div>';
+
+    $('#helpactions').html(whencard); //newPost moves whole textbox to the bottom, need to create new card to prepend
+
+
+});
+
+
 
