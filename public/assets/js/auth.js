@@ -113,13 +113,13 @@ function initApp() {
             var providerData = user.providerData;
             // [START_EXCLUDE]
             // document.getElementById('quickstart-sign-in-status').textContent = 'Signed in';
-            document.getElementById('quickstart-sign-in').textContent = 'Sign out';
+            $('#quickstart-sign-in').text('Sign out');
             // document.getElementById('quickstart-account-details').textContent = JSON.stringify(user, null, '  ');
             // [END_EXCLUDE]
             navlogin();
         } else {
             // User is signed out.
-            document.getElementById('quickstart-sign-in').textContent = 'Sign in with Google';
+            $('#quickstart-sign-in').text('Sign in with Google');
             navlogout();
         }
         // [START_EXCLUDE]
