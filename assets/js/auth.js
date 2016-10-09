@@ -78,8 +78,6 @@ function initApp() {
             // [END_EXCLUDE]
         } else {
             // User is signed out.
-            // [START_EXCLUDE]
-            // document.getElementById('quickstart-sign-in').textContent = 'Signed out';
             document.getElementById('quickstart-sign-in').textContent = 'Sign in with Google';
             // document.getElementById('quickstart-account-details').textContent = 'null';
             // document.getElementById('quickstart-oauthtoken').textContent = 'null';
