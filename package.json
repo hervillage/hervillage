@@ -2,18 +2,22 @@
   "name": "hervillage",
   "version": "1.0.0",
   "description": "It takes a village to start a business",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hervillage/hervillage.git"
   },
-  "author": "",
+  "author": "Albert Min",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/hervillage/hervillage/issues"
   },
-  "homepage": "https://github.com/hervillage/hervillage#readme"
+  "homepage": "https://github.com/hervillage/hervillage#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "twilio": "^2.11.0"
+  }
 }
