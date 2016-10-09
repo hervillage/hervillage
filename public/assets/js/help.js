@@ -61,6 +61,8 @@ $(document).on('click','#now', function () {
 
 
 });
-
-
+$(document).on('click','#user1', function () {
+    var finish = '<button class="btn btn-large card-panel large waves-effect waves-light teal lighten-3 text-upper" id="help"> Need something else? </button>';
+    $('#helpactions').html(finish);
+});
 
