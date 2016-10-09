@@ -52,6 +52,15 @@ $(document).on('click','#carpool', function () {
 
 
 });
+$(document).on('click','#now', function () {
+
+    console.log('Needs help now');
+    var matched = '<div class="col s12"><div class="card-panel white z-depth-1"> <div class="row valign-wrapper">  <div class="col s6">  <img src="assets/images/jasmine.jpeg" alt="Jasmine" class="circle responsive-img"> <br><span class="teal-text" id="user1"> Call Jasmine </span> </div> <div class="col s6"> <img src="assets/images/ana.jpeg" alt="ana" class="circle responsive-img"> <br><span class="teal-text" id="user2"> Call Ana </span> </div> </div> </div>';
+
+    $('#helpactions').html(matched); //newPost moves whole textbox to the bottom, need to create new card to prepend
+
+
+});
 
 
 
